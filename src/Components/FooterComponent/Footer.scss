@@ -1,0 +1,35 @@
+.footerWrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    margin: 2rem;
+    padding-left: 4rem;
+
+    
+    footer{
+     
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 2rem;
+        margin: 2rem;
+
+    
+        p{    
+        line-height: 1.5rem;
+            color: white;
+        }
+        h4{
+            line-height: 2rem;
+            color: white;
+        }
+        #right{
+            padding-left: 10rem;
+            h4{
+                padding-top: 1rem;
+            }
+        
+        }
+    }
+  }
+  
+  
