@@ -19,7 +19,7 @@ export const HomePage = () => {
     }))
   );
 
-  const [moves, setMoves] = useState(0); // Antal træk, spilleren har brugt
+  const [moves, setMoves] = useState(0); 
 
   return (
     <div>
