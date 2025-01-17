@@ -1,7 +1,4 @@
 import './HomePage.scss'
-import Board from "../../Components/BoardComponent/Board.jsx";
-import Scoreboard from "../../Components/ScoreboardComponent/Scoreboard.jsx";
-import { shuffleArray } from "../../Utils/Shuffle.js";
 import React, { useState } from "react";
 
 
@@ -22,14 +19,18 @@ export const HomePage = () => {
   const [moves, setMoves] = useState(0); // Antal træk, spilleren har brugt
 
   return (
-    <div>
-      <h1>Memory Game</h1>
-    
-      <Board cards={cards} setCards={setCards} moves={moves} setMoves={setMoves} />
-     
-      <Scoreboard moves={moves} />
+    <div className="grid grid-cols-2 gap-4 p-4">
+      {cards.map(card => (
+        <Card
+          key={card.id}
+          symbol={card.symbol}
+          isFlipped={card.isFlipped}
+          onClick={() => handleCardClick(card)}
+        />
+      ))}
     </div>
   );
-};
+}
 
+export default Board;
 
