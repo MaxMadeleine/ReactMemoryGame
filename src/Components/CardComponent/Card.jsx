@@ -1,6 +1,10 @@
 import React from "react";
 
 function Card({ card, onClick }) {
+  if (!card) {
+    return null; // Return null if card is undefined
+  }
+
   return (
     <div
       onClick={onClick} 
