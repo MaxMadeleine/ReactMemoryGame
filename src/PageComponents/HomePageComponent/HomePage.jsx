@@ -16,7 +16,7 @@ export const HomePage = () => {
     }))
   );
 
-  const [moves, setMoves] = useState(0); // Antal træk, spilleren har brugt
+  const [moves, setMoves] = useState(0); 
 
   return (
     <div className="grid grid-cols-2 gap-4 p-4">
